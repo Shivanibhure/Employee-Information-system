@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaf2f8;
+  color: #34495e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+h1 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* Form Section Styling */
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 5000px;
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f7f9fb;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 1900px;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table thead {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 15px;
+  color: #34495e;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+tbody tr:hover {
+  background-color: #f2f6f9;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child, th:first-child {
+  padding-left: 20px;
+}
+
+td:last-child, th:last-child {
+  padding-right: 20px;
+}
+
+/* Center alignment for numeric columns */
+td:nth-child(5), /* Salary */
+td:nth-child(6) { /* Experience */
+  text-align: center;
+}
+
+/* Style ID column for better visibility */
+td:first-child {
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table, th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
